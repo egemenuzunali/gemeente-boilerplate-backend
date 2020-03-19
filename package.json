@@ -1,0 +1,31 @@
+{
+	"name": "berichtgeving-backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "NODE_ENV=dev nodemon -e js,graphql -x node --inspect src/index.js",
+		"prod": "NODE_ENV=production PORT=5000 node src/index.js",
+		"user:create": "node src/scripts/userCreate.js"
+	},
+	"dependencies": {
+		"apollo-server": "^2.11.0",
+		"apollo-server-express": "^2.11.0",
+		"bcryptjs": "^2.4.3",
+		"cookie": "^0.4.0",
+		"cookie-parser": "^1.4.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"graphql": "^14.6.0",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.15",
+		"nodemailer": "^6.4.5",
+		"pg": "^7.18.2",
+		"prettier": "^1.19.1",
+		"sequelize": "^5.21.5"
+	},
+	"devDependencies": {
+		"eslint": "^6.8.0",
+		"nodemon": "^2.0.2"
+	}
+}
